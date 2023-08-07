@@ -60,3 +60,10 @@ learning_rate = 0.001
 model.fit(data_loader.train_data, data_loader.train_label,epochs=num_epochs,batch_size=batch_size)
 
 print(model.evaluate(data_loader.test_data,data_loader.test_label))
+
+"""**儲存模型數值**
+tf.saved_model.save(model, '/path/to/save/model')
+
+**載入模型數據**
+loaded_model = tf.saved_model.load('/path/to/saved/model')
+"""
